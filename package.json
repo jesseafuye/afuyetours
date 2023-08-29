@@ -1,7 +1,5 @@
 {
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+    
   }
 }
