@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: chocolate;
+  color: #d2691e;
   padding: 40px; }
 
 .header {
@@ -60,13 +60,13 @@ body {
   0% {
     opacity: 0;
     transform: translateX(-500px);
-    color: yellow; }
+    color: #ffd700; }
   25% {
-    color: brown; }
+    color: #87ceeb; }
   50% {
-    color: skyblue; }
+    color: #87ceeb; }
   80% {
-    color: black; }
+    color: #87ceeb; }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -91,8 +91,8 @@ body {
   transition: all 0.2s; }
 
 .btn-white {
-  background-color: white;
-  color: chocolate; }
+  background-color: #ffffff;
+  color: #d2691e; }
 
 .btn:hover {
   transform: translateY(-12px);
