@@ -1,0 +1,19 @@
+.header{height: 95vh;
+    background-image:linear-gradient(rgba($color-primary, 0.708),rgba($color-secondary, 0.744)),
+    url(../tour3.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);}
+    .logo-box {position:absolute;
+    top: 20px;
+    left:20px;
+    }
+    .logo{height:35px;}
+    .text-box
+    { 
+      position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;}
