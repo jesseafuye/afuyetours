@@ -1,6 +1,6 @@
 @mixin clearfix{
     &::after{
-        content: none;
+        content: "";
         display: table;
         clear: both;
         
