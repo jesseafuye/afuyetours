@@ -10,8 +10,7 @@
         outline-offset: 1rem;
         &--p1{
             left: 20px;
-            top:2px;
-            
+            top:2px;  
             }
             &--p2{
                 right: 0;
@@ -20,6 +19,7 @@
                     left: 20%;
                     top: 8rem;
                 }
+                
                 &:hover{
                     outline: 1.4rem solid  $color-secondary;
                     transform: scale(1.05) translateY(-.5rem);
