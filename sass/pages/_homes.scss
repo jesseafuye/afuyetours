@@ -1,10 +1,13 @@
 .section-about{
     background-color: $color-azure;
-    padding: 26rem 0;
+    padding: 10rem 0;
     margin-top: -24vh;
 }
 .section-features{
-    padding: 10rem 0;
+    padding: 15rem 0;
     background-image: linear-gradient(rgba($color-primary, 0.8), rgba($color-secondary, 0.8)), url(/tour0.jpg);
     background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);}
+    .logo-box {position:absolute;
+    top: 20px;
 }

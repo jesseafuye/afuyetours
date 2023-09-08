@@ -67,7 +67,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   transition: all .2s;
-  margin-top: -80px; }
+  margin-top: -100px; }
   .heading-secondary:hover {
     transform: skewY(5deg) skewX(15deg) scale(1.1);
     text-shadow: 30px 10px 20px rgba(0, 0, 0, 0.2); }
@@ -190,13 +190,14 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 4rem; }
 
 .col-1-of-2 {
-  width: calc((100% - 2rem) /2); }
+  width: calc((100% - 4rem) /2); }
 
 .col-1-of-4 {
-  width: calc((100% - 3 * 2rem) /4); }
+  width: calc((100% - 3 * 4rem) /4);
+  margin-top: -90px; }
 
 .header {
   height: 95vh;
@@ -223,10 +224,15 @@ body {
 
 .section-about {
   background-color: #f0ffff;
-  padding: 26rem 0;
+  padding: 10rem 0;
   margin-top: -24vh; }
 
 .section-features {
-  padding: 10rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(rgba(255, 215, 0, 0.8), rgba(255, 255, 0, 0.8)), url(/tour0.jpg);
-  background-size: cover; }
+  background-size: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+
+.logo-box {
+  position: absolute;
+  top: 20px; }
