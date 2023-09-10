@@ -94,4 +94,138 @@
     }
     }
 }
+&_cta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    text-align: center;
 }
+&_price-box{
+    text-align: center;
+    color: $color-white;
+    margin: 2rem;
+}
+&_price-only{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:$color-white ;
+}
+&_price-value{
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+}
+
+
+.card1{
+ -moz-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 23rem;
+   
+    &:hover &_side1--front1{
+        transform: rotateY(-180deg);
+         }
+        &:hover &_side1--back1{
+            transform: rotateY(0);
+        }
+        &_side1{
+            height: 23rem;
+            transition: all .6s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+            &--front1{
+                background-color: $color-white;
+                
+            }
+
+            &--back1{
+                
+                transform: rotateY(180deg);
+                &-11{
+                    background-image: linear-gradient($color-cardblue,$color-card2blue);
+                }
+                &-40{
+                    background-image: linear-gradient($colo-card3green,$colo-card3lightgreen);
+                }
+            }
+           
+        }
+        &_picture1{background-size: cover;
+            height: 9rem;
+            background-blend-mode: screen;
+            overflow: hidden;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+        &--12{
+            background-image:linear-gradient($color-card2blue,$color-cardblue), url(../../beach10.jpg);
+        }
+        
+        }
+        &_heading1{
+            font-size: 30px;
+            font-weight: 20;
+            text-transform: uppercase;
+            color: $color-cardblue;
+            position: absolute;
+            top: 2.7rem;
+            right: 1rem;
+            text-align: right;
+            width: 65%;
+        }
+        &_heading1-span{padding: 1px 1px;
+            -webkit-box-decoration-break:clone;
+            box-decoration-break:clone;
+    
+    
+            &--13{
+                background-image: linear-gradient(rgba($color-card2blue,.85),
+                rgba($color-cardblue,.85));
+            }
+        }
+    }
+.card3{
+    &_picture3{background-size: cover;
+        height: 9rem;
+        background-blend-mode: screen;
+       -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+       clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+
+        &--20{
+            background-image:linear-gradient($colo-card3lightgreen,$colo-card3green),url(../../zoo99.jpg);
+
+        }
+    }
+    &_heading3{
+        font-size: 34px;
+        font-weight: 34;
+        text-transform: uppercase;
+        color:$colo-card3lightgreen;
+        position: absolute;
+        top: 2.7rem;
+        right: 1rem;
+        text-align: right;
+        width: 65%;
+    } 
+    &_heading3-span{padding: 1px 1px;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break:clone;    
+    
+    &--30{
+        background-image: linear-gradient(rgba($colo-card3lightgreen,.85),
+       rgba($colo-card3green,.85));
+       
+    }
+}
+
+}
+
+
