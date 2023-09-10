@@ -138,25 +138,64 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 20rem; }
+  height: 23rem; }
   .card_side {
-    background-color: #ffffff;
-    height: 20rem;
+    height: 23rem;
     transition: all .8s;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden; }
     .card_side--front {
-      background-color: #ffd700; }
+      background-color: #ffffff; }
     .card_side--back {
-      background-color: #808080;
       transform: rotatey(180deg); }
+      .card_side--back-1 {
+        background-image: linear-gradient(#ffb900, #ff7730); }
   .card:hover .card_side--front {
-    transform: rotatey(180deg); }
+    transform: rotatey(-180deg); }
   .card:hover .card_side--back {
     transform: rotatey(0); }
+  .card_picture {
+    background-size: cover;
+    height: 9rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%); }
+    .card_picture--1 {
+      background-image: linear-gradient(#ffb900, #ff7730), url(../../card1.jpg); }
+  .card_heading {
+    font-size: 30px;
+    font-weight: 20;
+    text-transform: uppercase;
+    color: #ff7730;
+    position: absolute;
+    top: 2.7rem;
+    right: 1rem;
+    text-align: right;
+    width: 65%; }
+  .card_heading-span {
+    padding: 1px 1px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card_heading-span--1 {
+      background-image: linear-gradient(rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card_details {
+    padding: 1rem; }
+    .card_details ul {
+      list-style: none;
+      width: 60%;
+      margin: 0 auto; }
+      .card_details ul li {
+        text-align: center;
+        font-size: 10px;
+        padding: 10px; }
+        .card_details ul li:not(:last-child) {
+          border-bottom: 3px solid #f0ffff; }
 
 .composition {
   position: relative; }
@@ -233,6 +272,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
 
 .logo-box {
@@ -259,6 +299,7 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(rgba(255, 215, 0, 0.8), rgba(255, 255, 0, 0.8)), url(/tour0.jpg);
   background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
 
 .logo-box {

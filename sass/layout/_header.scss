@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);}
     .logo-box {position:absolute;
     top: 20px;

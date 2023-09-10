@@ -3,23 +3,29 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 20rem;
+    height: 23rem;
 
-&_side{ background-color: $color-white;
-    height: 20rem;
+&_side{ 
+    height: 23rem;
     transition: all .8s;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+    overflow: hidden;
     &--front{
-        background-color: $color-primary;}
+        background-color: $color-white;}
        
 
         &--back{
-            background-color: $color-gray;
+           
             transform: rotatey(180deg);
+            &-1{
+                background-image: linear-gradient($color-card1,$color-card1b);
+            }
            
         }
 
@@ -28,9 +34,64 @@
 
 
     &:hover &_side--front{
-        transform: rotatey(180deg);
+        transform: rotatey(-180deg);
     }
     &:hover &_side--back{
         transform: rotatey(0);
     }
+
+    &_picture{background-size: cover;
+        height: 9rem;
+        background-blend-mode: screen;
+       -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+       clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+
+        &--1{
+            background-image:linear-gradient($color-card1,$color-card1b), url(../../card1.jpg);
+
+        }
+
+        
+
+    }
+    &_heading{
+        font-size: 30px;
+        font-weight: 20;
+        text-transform: uppercase;
+        color: $color-card1b;
+        position: absolute;
+        top: 2.7rem;
+        right: 1rem;
+        text-align: right;
+        width: 65%;
+    }
+    &_heading-span{padding: 1px 1px;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break:clone;
+
+
+        &--1{
+            background-image: linear-gradient(rgba($color-card1,.85),rgba($color-card1b,.85));
+        }
+    }
+        &_details{
+       padding: 1rem;
+        ul{
+            list-style: none;
+            
+            width: 60%;
+            margin: 0 auto;
+        
+
+        li{
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        
+        &:not(:last-child) {
+            border-bottom: 3px solid $color-azure;
+        }
+    }
+    }
+}
 }
