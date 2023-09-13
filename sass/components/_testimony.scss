@@ -1,0 +1,54 @@
+.testimony{
+    width: 84%;
+    margin: 0 auto;
+    box-shadow:0 3rem 6rem rgba($color-black, .1);
+    background-color: $color-white;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 8rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
+
+   &_shape{
+    width: 10rem;
+    height: 10rem;
+    background-color: $color-primary;
+    float: left;
+    -webkit-shape-outside:circle(50% at 50% 50%);
+    shape-outside:circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem);
+    position: relative;
+   }
+   &_img{
+    height: 100%;
+    transform: translateX(-2rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s;
+
+
+   }
+   &_caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 5s;
+   }
+
+   &:hover  &_caption{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+&:hover &_img{
+    transform: translate(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+}
+
+}
