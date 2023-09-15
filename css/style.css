@@ -59,7 +59,7 @@ body {
     animation-duration: 3s; }
 
 .heading-secondary {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -97,6 +97,20 @@ body {
 
 .u-margin-top-big {
   margin-top: 4rem; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video_content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -346,11 +360,21 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.form_group:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.form_input {
+  font-size: .6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  background-color: rgba(240, 255, 255, 0.5);
+  border: none; }
+
 .testimony {
   width: 84%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 8rem;
@@ -461,5 +485,19 @@ body {
   margin-top: 0vh; }
 
 .section-testimony {
-  padding: 5rem 0;
-  background-color: #ADD8E6; }
+  position: relative;
+  padding: 5rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(#ff7730, #ffb900); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../openla.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  height: 25rem; }
+  .book_form {
+    width: 50%;
+    padding: 4rem; }
