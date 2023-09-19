@@ -487,6 +487,46 @@ body {
     transform: translate(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.footer {
+  background-color: #333;
+  padding: 4rem;
+  font-size: .7rem;
+  color: #ffb900; }
+  .footer_logo {
+    width: 10rem;
+    height: auto; }
+  .footer_logo-box {
+    text-align: center;
+    margin-bottom: 4rem; }
+  .footer_navigation {
+    border-top: 1px solid #f0ffff;
+    padding: 1rem;
+    display: inline-block; }
+  .footer_list {
+    list-style: none; }
+  .footer_item {
+    display: inline-block; }
+    .footer_item:not(:last-child) {
+      margin-right: 1rem; }
+  .footer_link:link, .footer_link:visited {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .3s;
+    background-color: #333; }
+  .footer_link:hover, .footer_link:active {
+    color: #ffd700;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3); }
+  .footer_copyright {
+    color: #ffffff;
+    border-top: 1px solid #f0ffff;
+    padding: 1rem;
+    display: inline-block;
+    width: 80%;
+    float: right; }
+
 .row {
   max-width: 50rem;
   margin: 0 auto; }
@@ -535,6 +575,68 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.navigation_checkbox {
+  display: none; }
+
+.navigation_button {
+  background-color: #ffffff;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  z-index: 2000; }
+
+.navigation_background {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  background-image: radial-gradient(#ffd700, #ffff00);
+  z-index: 1000;
+  transform: scale(40); }
+
+.navigation_nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation_item {
+  margin: 1rem; }
+
+.navigation_link:link, .navigation_link:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #006400;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
+  padding: 1rem;
+  background-size: 230%;
+  transition: all .4s; }
+  .navigation_link:link span, .navigation_link:visited span {
+    margin-right: 1rem;
+    display: inline-block; }
+
+.navigation_link:hover, .navigation_link:active {
+  background-position: 100%;
+  transform: translateX(1rem); }
 
 .section-about {
   background-color: #f0ffff;
