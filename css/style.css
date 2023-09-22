@@ -450,7 +450,10 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999; }
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
   .popup_content {
     position: absolute;
     top: 50%;
@@ -461,7 +464,10 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all .4s .3s; }
   .popup_left {
     width: 33.333333%;
     display: table-cell; }
@@ -476,9 +482,31 @@ body {
   .popup_text {
     font-size: .7rem;
     margin-bottom: 2rem;
+    color: #000000;
+    -moz-columns: 2;
+    -moz-column-gap: 2rem;
+    -moz-column-rule: 1px solid #ADD8E6;
     columns: 2;
     column-gap: 2rem;
     column-rule: 1px solid #ADD8E6; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup_close:link, .popup_close:visited {
+    color: #ADD8E6;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .3s;
+    line-height: 1; }
+  .popup_close:hover {
+    color: #ffd700; }
+  .popup:target .popup_content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
 
 .testimony {
   width: 84%;
