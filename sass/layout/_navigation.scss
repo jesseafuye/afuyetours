@@ -14,6 +14,8 @@
         border-radius:50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        cursor: pointer;
        
     }
   &_background{
@@ -86,4 +88,46 @@
     opacity: 1;
     width: 100%;
   }
+  &_icon{
+    position: relative;
+    margin-top: 1.6rem;
+    &,
+    &::before,
+    &::after{
+        width: 1.5rem;
+        height: 3px;
+        background-color: $color-black;
+        display: inline-block;
+    }
+    &::before,
+    &::after{
+        content:"" ;
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before{
+        top: -.8rem;
+    }
+   &::after{
+    top:.8rem;
+   }
+  }
+  &_button:hover &_icon::before{
+    top: -1rem;
+  }
+  &_button:hover &_icon::after{
+    top:1rem;
+  }
+  &_checkbox:checked + &_button &_icon{
+    background-color: transparent;}
+
+    &_checkbox:checked + &_button &_icon::before{
+      transform: rotate(135deg) ;
+    top: 0;}
+
+      &_checkbox:checked + &_button &_icon::after{
+       transform: rotate(-153deg);
+    top: 0;}
+  
 }
